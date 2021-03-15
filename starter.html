@@ -53,7 +53,7 @@
         "use strict"
         gsap.registerPlugin(ScrollTrigger);
 
-        gsap.to("#the_div", { duration: 5, x: "45vw", scrollTrigger:{trigger:"#the_div", scrub:true, markers:true, start:"top 75%", end:"bottom 25%", pin:true}});
+        gsap.to("#the_div", { duration: 5, x: "45vw", scrollTrigger:{trigger:"#the_div", markers:true, start:"top 75%", end:"bottom 25%", toggleActions: "play pause resume reset"}});
 
         //markers:true er for developing
     </script>
